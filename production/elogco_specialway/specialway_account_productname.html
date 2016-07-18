@@ -1,0 +1,694 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+
+
+
+
+    <meta charset="UTF-8">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+<title> 易聚货- 货物信息管理 </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Favicons -->
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/icons/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/icons/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/icons/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../../assets/images/icons/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../../assets/images/icons/favicon.png">
+
+
+
+    <link rel="stylesheet" type="text/css" href="../../assets/bootstrap/css/bootstrap.css">
+
+
+<!-- HELPERS -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/animate.css">
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/backgrounds.css">
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/boilerplate.css">
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/border-radius.css">
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/grid.css">
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/page-transitions.css">
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/spacing.css">
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/typography.css">
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/utils.css">
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/colors.css">
+
+<!-- ELEMENTS -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/elements/badges.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/buttons.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/content-box.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/dashboard-box.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/forms.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/images.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/info-box.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/invoice.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/loading-indicators.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/menus.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/panel-box.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/response-messages.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/responsive-tables.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/ribbon.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/social-box.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/tables.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/tile-box.css">
+<link rel="stylesheet" type="text/css" href="../../assets/elements/timeline.css">
+
+
+
+<!-- ICONS -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/icons/fontawesome/fontawesome.css">
+<link rel="stylesheet" type="text/css" href="../../assets/icons/linecons/linecons.css">
+<link rel="stylesheet" type="text/css" href="../../assets/icons/spinnericon/spinnericon.css">
+
+
+<!-- WIDGETS -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/accordion-ui/accordion.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/calendar/calendar.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/carousel/carousel.css">
+
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/justgage/justgage.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/morris/morris.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/piegage/piegage.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/charts/xcharts/xcharts.css">
+
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/chosen/chosen.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/colorpicker/colorpicker.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/datatable/datatable.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/datepicker/datepicker.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/datepicker-ui/datepicker.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/daterangepicker/daterangepicker.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/dialog/dialog.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/dropdown/dropdown.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/dropzone/dropzone.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/file-input/fileinput.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/input-switch/inputswitch.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/input-switch/inputswitch-alt.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/ionrangeslider/ionrangeslider.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/jcrop/jcrop.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/jgrowl-notifications/jgrowl.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/loading-bar/loadingbar.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/maps/vector-maps/vectormaps.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/markdown/markdown.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/modal/modal.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/multi-select/multiselect.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/multi-upload/fileupload.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/nestable/nestable.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/noty-notifications/noty.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/popover/popover.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/pretty-photo/prettyphoto.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/progressbar/progressbar.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/range-slider/rangeslider.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/slidebars/slidebars.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/slider-ui/slider.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/summernote-wysiwyg/summernote-wysiwyg.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/tabs-ui/tabs.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/theme-switcher/themeswitcher.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/timepicker/timepicker.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/tocify/tocify.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/tooltip/tooltip.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/touchspin/touchspin.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/uniform/uniform.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/wizard/wizard.css">
+<link rel="stylesheet" type="text/css" href="../../assets/widgets/xeditable/xeditable.css">
+
+<!-- SNIPPETS -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/snippets/chat.css">
+<link rel="stylesheet" type="text/css" href="../../assets/snippets/files-box.css">
+<link rel="stylesheet" type="text/css" href="../../assets/snippets/login-box.css">
+<link rel="stylesheet" type="text/css" href="../../assets/snippets/notification-box.css">
+<link rel="stylesheet" type="text/css" href="../../assets/snippets/progress-box.css">
+<link rel="stylesheet" type="text/css" href="../../assets/snippets/todo.css">
+<link rel="stylesheet" type="text/css" href="../../assets/snippets/user-profile.css">
+<link rel="stylesheet" type="text/css" href="../../assets/snippets/mobile-navigation.css">
+
+<!-- APPLICATIONS -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/applications/mailbox.css">
+
+<!-- Admin theme -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/themes/admin/layout.css">
+<link rel="stylesheet" type="text/css" href="../../assets/themes/admin/color-schemes/default.css">
+
+<!-- Components theme -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/themes/components/default.css">
+<link rel="stylesheet" type="text/css" href="../../assets/themes/components/border-radius.css">
+
+<!-- Admin responsive -->
+
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/responsive-elements.css">
+<link rel="stylesheet" type="text/css" href="../../assets/helpers/admin-responsive.css">
+
+    <!-- JS Core -->
+
+    <script type="text/javascript" src="../../assets/js-core/jquery-core.js"></script>
+    <script type="text/javascript" src="../../assets/js-core/jquery-ui-core.js"></script>
+    <script type="text/javascript" src="../../assets/js-core/jquery-ui-widget.js"></script>
+    <script type="text/javascript" src="../../assets/js-core/jquery-ui-mouse.js"></script>
+    <script type="text/javascript" src="../../assets/js-core/jquery-ui-position.js"></script>
+    <!--<script type="text/javascript" src="../../assets/js-core/transition.js"></script>-->
+    <script type="text/javascript" src="../../assets/js-core/modernizr.js"></script>
+    <script type="text/javascript" src="../../assets/js-core/jquery-cookie.js"></script>
+
+
+
+
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            setTimeout(function() {
+                $('#loading').fadeOut( 400, "linear" );
+            }, 300);
+        });
+    </script>
+
+
+
+</head>
+
+
+    <body>
+    <div id="loading">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <div id="page-wrapper">
+        <div id="page-header" class="bg-gradient-9">
+        
+    <div id="mobile-navigation">
+        <button id="nav-toggle" class="collapsed" data-toggle="collapse" data-target="#page-sidebar"><span></span></button>
+        <a href="index.html" class="logo-content-small" title="MonarchUI"></a>
+    </div>
+
+    <div id="header-logo" class="logo-bg">
+
+        <a href="index.html" class="logo-content-big" title="MonarchUI">
+            Elogco <i>易聚货</i>
+            <span>物流公司厂家</span>
+        </a>
+
+        <a href="index.html" class="logo-content-small" title="MonarchUI">
+            Elogco <i>易聚货</i>
+            <span>物流公司厂家</span>
+        </a>
+
+        <a id="close-sidebar" href="#" title="Close sidebar">
+            <i class="glyph-icon icon-angle-left"></i>
+        </a>
+
+    </div>
+
+    <div id="header-nav-left">    
+        <div class="user-account-btn dropdown">
+            <a href="#" title="My Account" class="user-profile clearfix" data-toggle="dropdown">
+                <img width="28" src="../../assets/image-resources/gravatar.jpg" alt="Profile image">
+                <span>账户设置</span>
+                <i class="glyph-icon icon-angle-down"></i>
+            </a>
+
+            <div class="dropdown-menu float-left">
+                <div class="box-sm">
+
+                    <div class="login-box clearfix">
+                        <div class="user-info">
+                            <span>
+                                <i>退出账户</i>
+                            </span>
+                        </div>
+
+                    <div class="pad5A button-pane button-pane-alt text-center">
+                        <a href="#" class="btn display-block font-normal btn-danger">
+                            <i class="glyph-icon icon-power-off"></i>
+                            退出
+                        </a>
+                    </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+ 
+
+
+    </div><!-- #header-nav-left -->
+
+    <!-- #header-nav-right -->
+    <div id="header-nav-right">
+
+
+    </div><!-- #header-nav-right -->
+
+</div>
+    <div id="page-sidebar">
+        <div class="scroll-sidebar">
+            
+
+            <ul id="sidebar-menu">
+
+            <li class="header"><span>发布信息</span></li>
+
+            <li>
+                <a href="specialway_send_products.html">
+                    <i class="glyph-icon icon-share"></i>
+                    <span>发布货源信息</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+                <a href="specialway_send_info.html">
+                    <i class="glyph-icon icon-share-alt"></i>
+                    <span>发布其他信息</span>
+                </a>
+            </li>
+
+            <li class="header"><span>已发布信息</span></li>
+
+            <li>
+                <a href="specialway_sent_products.html">
+                    <i class="glyph-icon icon-list"></i>
+                    <span>已发布货源信息</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+                <a href="specialway_sent_info.html">
+                    <i class="glyph-icon icon-list"></i>
+                    <span>已发布其他信息</span>
+                </a>
+            </li>
+
+            <li class="header"><span>已完成信息</span></li>
+
+            <li>
+                <a href="specialway_complete_products.html">
+                    <i class="glyph-icon icon-check"></i>
+                    <span>已完成货源信息</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+                <a href="specialway_complete_info.html">
+                    <i class="glyph-icon icon-check"></i>
+                    <span>已完成其他信息</span>
+                </a>
+            </li>
+
+            <li class="header"><span>信息列表</span></li>
+
+            <li>
+                <a href="specialway_drivers_list.html">
+                    <i class="glyph-icon icon-list-alt"></i>
+                    <span>车源信息列表</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+                <a href="specialway_specialway_list.html">
+                    <i class="glyph-icon icon-road"></i>
+                    <span>专线信息列表</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+                <a href="specialway_companys_list.html">
+                    <i class="glyph-icon icon-tasks"></i>
+                    <span>其他公司货源信息列表</span>
+                </a>
+            </li>
+
+            <li class="header"><span>账户管理</span></li>
+
+            <li>
+                <a href="specialway_account_validateinfo.html">
+                    <i class="glyph-icon icon-lock"></i>
+                    <span>认证资料</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+                <a href="specialway_account_normalinfo.html">
+                    <i class="glyph-icon icon-bookmark"></i>
+                    <span>公司资料</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+                <a href="specialway_account_people.html">
+                    <i class="glyph-icon icon-magnet"></i>
+                    <span>调度信息管理</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+                <a href="specialway_account_productname.html">
+                    <i class="glyph-icon icon-cog"></i>
+                    <span>货物信息管理</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+                <a href="specialway_account_extra.html">
+                    <i class="glyph-icon icon-user"></i>
+                    <span>分账号管理</span>
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            <li>
+                <a href="specialway_account_psw.html">
+                    <i class="glyph-icon icon-edit"></i>
+                    <span>修改密码</span>
+                </a>
+            </li>
+
+            <li class="header"><span>易聚货平台福利</span></li>
+
+            <li>
+                <a href="elogco_rewards.html">
+                    <i class="glyph-icon icon-bullhorn"></i>
+                    <span>平台福利车</span>
+                </a>
+            </li>
+
+            </ul><!-- #sidebar-menu -->
+
+
+        </div>
+    </div>
+
+        <div id="page-content-wrapper">
+            <div id="page-content">
+                
+                    <div class="container">
+                    
+
+<!-- jQueryUI Spinner -->
+
+<script type="text/javascript" src="../../assets/widgets/spinner/spinner.js"></script>
+<script type="text/javascript">
+    /* jQuery UI Spinner */
+
+    $(function() { "use strict";
+        $(".spinner-input").spinner();
+    });
+</script>
+
+<!-- jQueryUI Autocomplete -->
+
+<script type="text/javascript" src="../../assets/widgets/autocomplete/autocomplete.js"></script>
+<script type="text/javascript" src="../../assets/widgets/autocomplete/menu.js"></script>
+<script type="text/javascript" src="../../assets/widgets/autocomplete/autocomplete-demo.js"></script>
+
+<!-- Touchspin -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/touchspin/touchspin.css">-->
+<script type="text/javascript" src="../../assets/widgets/touchspin/touchspin.js"></script>
+<script type="text/javascript" src="../../assets/widgets/touchspin/touchspin-demo.js"></script>
+
+<!-- Input switch -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/input-switch/inputswitch.css">-->
+<script type="text/javascript" src="../../assets/widgets/input-switch/inputswitch.js"></script>
+<script type="text/javascript">
+    /* Input switch */
+
+    $(function() { "use strict";
+        $('.input-switch').bootstrapSwitch();
+    });
+</script>
+
+<!-- Textarea -->
+
+<script type="text/javascript" src="../../assets/widgets/textarea/textarea.js"></script>
+<script type="text/javascript">
+    /* Textarea autoresize */
+
+    $(function() { "use strict";
+        $('.textarea-autosize').autosize();
+    });
+</script>
+
+<!-- Multi select -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/multi-select/multiselect.css">-->
+<script type="text/javascript" src="../../assets/widgets/multi-select/multiselect.js"></script>
+<script type="text/javascript">
+    /* Multiselect inputs */
+
+    $(function() { "use strict";
+        $(".multi-select").multiSelect();
+        $(".ms-container").append('<i class="glyph-icon icon-exchange"></i>');
+    });
+</script>
+
+<!-- Uniform -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/uniform/uniform.css">-->
+<script type="text/javascript" src="../../assets/widgets/uniform/uniform.js"></script>
+<script type="text/javascript" src="../../assets/widgets/uniform/uniform-demo.js"></script>
+
+<!-- Chosen -->
+
+<!--<link rel="stylesheet" type="text/css" href="../../assets/widgets/chosen/chosen.css">-->
+<script type="text/javascript" src="../../assets/widgets/chosen/chosen.js"></script>
+<script type="text/javascript" src="../../assets/widgets/chosen/chosen-demo.js"></script>
+
+
+<div id="page-title">
+    <h2>货物信息管理</h2>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <div class="example-box-wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+
+
+
+                        <form class="form-horizontal bordered-row">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">货物名称可在发布货源页面中直接使用</label>
+                                <div class="col-sm-5 col-sm-offset-1">
+                                <button type="button" class="col-sm-2 col-xs-12 form-control" data-toggle="collapse" data-target="#add-new" style="font-size:15px; border:1px solid #008bdc">
+                            添加货物名称
+                        </button>
+                                </div>
+                            </div>              
+                        </form>
+
+                    </div>
+
+                    <div id="add-new" class="collapse">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <form class="form-horizontal bordered-row">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">货物名称</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <label class="col-sm-2 control-label"></label>
+                                        <button class="col-sm-6 col-xs-offset-1 col-xs-8 btn bg-blue" style="margin-right:20px !important">
+                                            添加货物名称
+                                        </button>
+                                    </div>              
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel">
+    <div class="panel-body">
+        <div class="example-box-wrapper">
+            <form class="form-horizontal bordered-row">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">货物名称</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="" placeholder="品名1">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-4">
+                        <button class="form-control" style="border: 1px solid #008bdc">保存</button> 
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <button class="form-control" style="border: 1px solid #FF0000">删除</button>
+                    </div>
+                </div>              
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="panel">
+    <div class="panel-body">
+        <div class="example-box-wrapper">
+            <form class="form-horizontal bordered-row">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">货物名称</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="" placeholder="品名2">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-4">
+                        <button class="form-control" style="border: 1px solid #008bdc">保存</button> 
+                    </div>
+                    
+                    <div class="col-sm-4">
+                        <button class="form-control" style="border: 1px solid #FF0000">删除</button>
+                    </div>
+                </div>              
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="text-center">
+    <ul class="pagination pagination">
+        <li><a href="#">«</a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+    </ul>
+</div>
+                    </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- WIDGETS -->
+
+<script type="text/javascript" src="../../assets/bootstrap/js/bootstrap.js"></script>
+
+<!-- Bootstrap Dropdown -->
+
+<!-- <script type="text/javascript" src="../../assets/widgets/dropdown/dropdown.js"></script> -->
+
+<!-- Bootstrap Tooltip -->
+
+<!-- <script type="text/javascript" src="../../assets/widgets/tooltip/tooltip.js"></script> -->
+
+<!-- Bootstrap Popover -->
+
+<!-- <script type="text/javascript" src="../../assets/widgets/popover/popover.js"></script> -->
+
+<!-- Bootstrap Progress Bar -->
+
+<script type="text/javascript" src="../../assets/widgets/progressbar/progressbar.js"></script>
+
+<!-- Bootstrap Buttons -->
+
+<!-- <script type="text/javascript" src="../../assets/widgets/button/button.js"></script> -->
+
+<!-- Bootstrap Collapse -->
+
+<!-- <script type="text/javascript" src="../../assets/widgets/collapse/collapse.js"></script> -->
+
+<!-- Superclick -->
+
+<script type="text/javascript" src="../../assets/widgets/superclick/superclick.js"></script>
+
+<!-- Input switch alternate -->
+
+<script type="text/javascript" src="../../assets/widgets/input-switch/inputswitch-alt.js"></script>
+
+<!-- Slim scroll -->
+
+<script type="text/javascript" src="../../assets/widgets/slimscroll/slimscroll.js"></script>
+
+<!-- Slidebars -->
+
+<script type="text/javascript" src="../../assets/widgets/slidebars/slidebars.js"></script>
+<script type="text/javascript" src="../../assets/widgets/slidebars/slidebars-demo.js"></script>
+
+<!-- PieGage -->
+
+<script type="text/javascript" src="../../assets/widgets/charts/piegage/piegage.js"></script>
+<script type="text/javascript" src="../../assets/widgets/charts/piegage/piegage-demo.js"></script>
+
+<!-- Screenfull -->
+
+<script type="text/javascript" src="../../assets/widgets/screenfull/screenfull.js"></script>
+
+<!-- Content box -->
+
+<script type="text/javascript" src="../../assets/widgets/content-box/contentbox.js"></script>
+
+<!-- Overlay -->
+
+<script type="text/javascript" src="../../assets/widgets/overlay/overlay.js"></script>
+
+<!-- Widgets init for demo -->
+
+<script type="text/javascript" src="../../assets/js-init/widgets-init.js"></script>
+
+<!-- Theme layout -->
+
+<script type="text/javascript" src="../../assets/themes/admin/layout.js"></script>
+
+<!-- Theme switcher -->
+
+<script type="text/javascript" src="../../assets/widgets/theme-switcher/themeswitcher.js"></script>
+
+</div>
+</body>
+</html>
